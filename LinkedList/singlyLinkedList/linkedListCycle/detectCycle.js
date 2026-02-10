@@ -47,3 +47,23 @@ var hasCycle = function (head) {
 };
 
 console.log(hasCycle(head));
+
+/**
+ * When to use array and when to use set
+ *
+ * Use Array
+ * - Order matters
+ * - Access by index
+ * - Duplicate values are allowed
+ * - Problem - checking existence is slow - arr.includes(x) or arr.indexOf(x) is O(n)
+ * - Memory usage is less
+ * - Commonly used in lists, stacks, queues, sequences
+ *
+ * Use Set
+ * - Order doesn't matter
+ * - Access by value
+ * - No duplicate values allowed
+ * - Checking existence is fast - set.has(x) is O(1)
+ * - Memory usage is more
+ * - Commonly used in graph traversal, cycle detection, caching, deduplication
+ */
